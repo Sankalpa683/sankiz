@@ -71,7 +71,7 @@
   <script>
     document.addEventListener('keydown', function (event) {
       // Check if Ctrl+U is pressed
-      if (event.key == 'u' || event.key == 'U') {
+      if (event.ctrlKey && event.key == 'u' || event.ctrlKey && event.key == 'U') {
         // Do something (e.g., prevent the default action or take other action)
         event.preventDefault();
         alert('Viewing page source is not allowed.');
